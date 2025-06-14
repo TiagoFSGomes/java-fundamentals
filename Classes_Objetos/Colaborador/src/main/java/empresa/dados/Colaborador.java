@@ -3,14 +3,20 @@
 package empresa.dados;
 
 public class Colaborador {
-    String nome;
+//   public String nome; //modificador acesso public garante a visualização
+   private String nome; //modificador acesso private garante visualização dentro da propria classe
     double salario;
 
-    //Construtor
-    public Colaborador(String nomeInit, double salarioInit) {
+    //Construtor privado
+    private Colaborador(String nomeInit, double salarioInit) {
         nome = nomeInit;
         salario = salarioInit;
         System.out.println("Nome: " + nome);
         System.out.println("Salario: " + salario);
+    }
+
+    //Sobrecarga de construtor
+    protected Colaborador() {
+        Colaborador colab = new Colaborador("Mario",4385.00);
     }
 }
