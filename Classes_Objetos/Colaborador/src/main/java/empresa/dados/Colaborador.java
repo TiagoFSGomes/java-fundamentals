@@ -1,3 +1,26 @@
+// ========================================================
+// Modificadores de Acesso em Java - Regras de Visibilidade
+// ========================================================
+
+/*
+1. public
+   - Visível em qualquer lugar (dentro e fora do pacote).
+
+2. protected
+   - Visível no mesmo pacote.
+   - Visível em subclasses (mesmo fora do pacote).
+
+3. (sem modificador) - package-private
+   - Visível apenas dentro do mesmo pacote.
+   - Também chamado de "default" (não confundir com palavra-chave `default`).
+
+4. private
+   - Visível apenas dentro da própria classe.
+*/
+
+
+
+
 //Pacote armazena a classe Colaborador
 //Necessita estar dentro de uma pasta nomeada com o mesmo nome do package
 package empresa.dados;
