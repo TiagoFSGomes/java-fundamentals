@@ -59,13 +59,23 @@
 
 
 public class TestStatic {
-    //Metodo estatico
+    //Metodo estatico sobrecarregado #1
     public static void exibirValor(int a){
         System.out.println("O valor inteiro é: " + a);
     }
 
+    //Metodo estatico sobrecarregado #2
+    public static void exibirValor(String str) {
+        System.out.println("A string é: " + str);
+    }
+
 public static void main(String[] args) {
-    TestStatic.exibirValor(10); //Chamando o metodo estatico pelo nome da classe. Sem criar objeto
-    //exibirValor(10)
+        //Chamando metodo 1
+//        TestStatic.exibirValor(10); //Chamando o metodo estatico pelo nome da classe. Sem criar objeto
+        //exibirValor(10)
+
+        //Chamando metodo 2
+        TestStatic.exibirValor("Métodos estáticos pertencem à classe e não a instâncias (objetos)");
+
     }
 }
