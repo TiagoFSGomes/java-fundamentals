@@ -23,7 +23,7 @@
  *    - Ex: funções matemáticas, de formatação, validação etc.
  *
  * 3. PODEM SER UTILIZADOS EM MÉTODOS `main`:
- *    - O método `main` é estático, pois precisa ser executado sem uma instância da classe.
+ *    - O metodo `main` é estático, pois precisa ser executado sem uma instância da classe.
  *
  * 4. PODEM SER HERDADOS, MAS NÃO PODEM SER SOBRESCRITOS:
  *    - Métodos estáticos podem ser redefinidos (ocultar), mas não sobrescritos (override).
@@ -68,14 +68,5 @@ public class TestStatic {
     public static void exibirValor(String str) {
         System.out.println("A string é: " + str);
     }
-
-public static void main(String[] args) {
-        //Chamando metodo 1
-//        TestStatic.exibirValor(10); //Chamando o metodo estatico pelo nome da classe. Sem criar objeto
-        //exibirValor(10)
-
-        //Chamando metodo 2
-        TestStatic.exibirValor("Métodos estáticos pertencem à classe e não a instâncias (objetos)");
-
-    }
 }
+
